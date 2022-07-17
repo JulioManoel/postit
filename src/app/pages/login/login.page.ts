@@ -18,9 +18,9 @@ export class LoginPage {
   public loginPayload: LoginPayload = {
     email: '',
     password: '',
-  }
+  };
 
-  public isLoading: boolean = false;
+  public isLoading = false;
 
   public async login(): Promise<void> {
     this.isLoading = true;
@@ -38,10 +38,10 @@ export class LoginPage {
       buttons: [
         {
           text: 'OK',
-          handler: () => { console.log('Ok!') }
+          handler: () => { console.log('Ok!'); }
         }
       ]
-    })
+    });
     alert.present();
     console.log(this.loginPayload);
   }
