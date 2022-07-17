@@ -13,7 +13,7 @@
       <input type="password" [(ngModel)]="loginPayload.password">
     </div>
 
-    <ion-button (click)="login()">Confirmar</ion-button>
+    <ion-button [class.disabled]="canLogin()" (click)="login()">Confirmar</ion-button>
 
     <p>Não possui conta? <a href="#">Cadastra-se!</a></p>
   </div>
